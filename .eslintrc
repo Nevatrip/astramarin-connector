@@ -1,0 +1,26 @@
+---
+extends: eslint:recommended
+parserOptions:
+  ecmaVersion: 2017
+  ecmaFeatures:
+    modules: true
+    blockBindings: true
+    arrowFunctions: true
+    objectLiteralShorthandMethods: true
+    objectLiteralShorthandProperties: true
+    templateStrings: true
+
+env:
+  es6: true
+  browser: true
+  node: true
+
+plugins:
+- immutable
+
+rules:
+  no-var: 2
+  immutable/no-let: 0
+  immutable/no-this: 0
+  immutable/no-mutation: 0
+  standard/computed-property-even-spacing: 0
