@@ -220,14 +220,20 @@ class astraMarin {
   }
 
   // 4
-  async _SeatСategory (venueID) {
+  async _SeatСategory (venueID, eventID) {
     this.trip.venueID = venueID || this.trip.venueID
     if (!this.trip.venueID) {
       throw new Error('venueID is not defined')
     }
 
+    this.trip.eventID = eventID || this.trip.eventID
+    if (!this.trip.eventID) {
+      throw new Error('eventID is not defined')
+    }
+
     const request = {
       Venue_ID: this.trip.venueID,
+      Event_ID: this.trip.eventID,
       Email: this.email()
     }
 
