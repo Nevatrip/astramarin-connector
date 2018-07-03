@@ -1,7 +1,7 @@
 {
   "name": "astramarin-connector",
   "description": "Connector to AstraMarin API",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Realetive <realetive@yandex.ru>",
   "bugs": "https://github.com/Nevatrip/astramarin-connector/issues",
   "config": {
