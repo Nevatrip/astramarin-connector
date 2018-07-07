@@ -110,7 +110,7 @@ class astraMarin {
     return this.trip.orderID
   }
 
-  static _createRequest (method, body) {
+  _createRequest (method, body) {
     return `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://localhost/InternetSaleJSON">
        <soapenv:Header/>
        <soapenv:Body>

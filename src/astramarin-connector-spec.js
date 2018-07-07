@@ -7,6 +7,6 @@ const astramarinConnector = require('.')
 describe('astramarin-connector', () => {
   it('write this test', () => {
     // console.assert(astramarinConnector, 'should export something')
-    assert.equal(typeof astramarinConnector, 'object')
+    assert.equal(typeof astramarinConnector, 'function')
   })
 })
