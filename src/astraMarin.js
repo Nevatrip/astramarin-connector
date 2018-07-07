@@ -189,10 +189,6 @@ class astraMarin {
     }
 
     this.trip.serviceGroupID = serviceGroupID || this.trip.serviceGroupID
-    if (!this.trip.serviceGroupID) {
-      throw new Error('serviceGroupID is not defined')
-    }
-
     this.trip.eventID = eventID || this.trip.eventID
 
     const request = {
