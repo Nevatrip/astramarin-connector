@@ -422,10 +422,6 @@ class astraMarin {
     }
 
     this.trip.paymentTypeID = paymentTypeID || this.trip.paymentTypeID
-    if (!this.trip.paymentTypeID) {
-      throw new Error('paymentTypeID is not defined')
-    }
-
     this.trip.seatID = seatID || this.trip.seatID
     this.trip.categorySeatID = categorySeatID || this.trip.categorySeatID
     this.trip.resident = resident || this.trip.resident
